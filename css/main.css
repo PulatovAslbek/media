@@ -1,0 +1,61 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ccc;
+}
+
+.container {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+  background-color: aqua;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+  body {
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+  body {
+    background-color: red;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .list {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
